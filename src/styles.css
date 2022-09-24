@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+:root {
+    --very-dark-blue-main: hsl(217, 54%, 11%);
+    --very-dark-blue-card: hsl(216, 50%, 16%);
+    --very-dark-blue-line: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+    --soft-blue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+    --font-size-1: 1.125rem;
+    --font-size-2: 1.5rem;
+    --font-size-3: 2rem;
+    --font-weigth-thin: 300;
+    --font-weigth-regular: 400;
+    --font-weigth-bold: 600;
+}
+
+body {
+    min-width: 100%;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    background-color: var(--very-dark-blue-main);
+    font-family: 'Outfit', sans-serif;
+}
+
+.card-container {
+    max-width: 345px;
+    padding: 1.5rem;
+    background-color: var(--very-dark-blue-card);
+    border-radius: 1.25rem;
+}
+
+.image-section {
+    position: relative;
+    overflow: hidden;
+    border-radius: 0.5rem;
+    height: 18.1875rem;
+}
+
+#equilibrium, #view{
+    width: 100%;
+    border-radius: 0.5rem;
+}
+
+#equilibrium:hover {
+    cursor: pointer;
+}
+
+#view {
+    opacity: 0;
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    padding: 130px;
+}
+
+#view:hover {
+    opacity: 1;
+    cursor: pointer;
+    filter: opacity(40%);
+    background-color: var(--cyan);
+}
+
+.info-section {
+    color: var(--white);
+    margin: 1rem 0;
+}
+
+.info-title {
+    font-weight: var(--font-weigth-bold);
+    margin-bottom: 1rem;
+}
+
+.info-title:hover {
+    cursor: pointer;
+    color: var(--cyan);
+}
+
+.info-text {
+    font-weight: var(--font-weigth-thin);
+    opacity: 0.7;
+    margin-bottom: 1rem;
+    font-size: var(--font-size-1);
+}
+
+.info-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--very-dark-blue-line);
+}
+
+.info-details div {
+    display: flex;
+}
+
+.info-details div img {
+    margin-right: 0.5rem;
+}
+
+#time-img{
+    width: 1.25rem;
+    height: 1.25rem;
+}
+
+#price {
+    color: var(--cyan);
+}
+
+#time {
+    opacity: 0.7;
+    font-size: 1rem;
+    font-weight: var(--font-weigth-thin);
+}
+
+.creator-section {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+#profile-img {
+    width: 2.5rem;
+    height: 2.5rem;
+    border: 1px solid var(--white);
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+
+#creator {
+    color: var(--white);
+    font-weight: var(--font-weigth-thin);
+    opacity: 0.9;
+}
+
+#name {
+    font-weight: var(--font-weigth-bold);
+}
+
+#name:hover {
+    cursor: pointer;
+    color: var(--cyan);
+}
+
+.attribution {
+    color: var(--white);
+    text-align: center;
+}
+
+.attribution a {
+    text-decoration: none;
+    color: var(--cyan);
+}
